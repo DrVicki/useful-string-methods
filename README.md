@@ -176,7 +176,40 @@ for (let greeting of greetings) {
   }
 }
 ```
-SHOW SOLUTION
+
+<details>
+  <summary>Click to SHow Solution!</summary>
+  
+  ## Solution
+  
+  **Live **
+  
+Merry Christmas my love
+  
+A happy Christmas to all the family
+  
+You're all I want for Christmas
+
+  ```
+  const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const greetings = ['Happy Birthday!',
+                 'Merry Christmas my love',
+                 'A happy Christmas to all the family',
+                 'You\'re all I want for Christmas',
+                 'Get well soon'];
+
+for (let greeting of greetings) {
+  // Your conditional test needs to go inside the parentheses
+  // in the line below, replacing what's currently there
+  if (greeting.includes('Christmas')) {
+    const listItem = document.createElement('li');
+    listItem.textContent = greeting;
+    list.appendChild(listItem);
+  }
+}
+```
+</details>
 
 
 ## Fixing capitalization
@@ -217,6 +250,7 @@ for (let city of cities) {
   
   ## Solution
 **Live **
+
 London
   
 Manchester
