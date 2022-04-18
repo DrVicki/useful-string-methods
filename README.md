@@ -218,8 +218,11 @@ for (let city of cities) {
   ## Solution
 **Live **
 London
+  
 Manchester
+  
 Birmingham
+  
 Liverpool
   
   ```
@@ -269,6 +272,18 @@ We'd recommend doing it like this:
   <summary>Click to Show Solution!</summary>
   
   ## Solution
+  
+  **Live output**
+  
+MAN: Manchester Piccadilly
+  
+GNF: Greenfield
+  
+LIV: Liverpool Lime Street
+  
+SYB: Stalybridge
+  
+HUD: Huddersfield
 ```
   const list = document.querySelector('.output ul');
 list.innerHTML = '';
