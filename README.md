@@ -222,10 +222,13 @@ In this exercise we have the names of cities in the United Kingdom, but the capi
   - Store the result of this replace procedure in another new variable.
   - Change the value of the result variable to equal to the final result, not the city.
 
-**Live output**
+**Live Output**
+
 lonDon
 ManCHESTer
+
 BiRmiNGHAM
+
 liVERpoOL
 
 ```
@@ -249,7 +252,8 @@ for (let city of cities) {
   <summary>Click to Show Solution!</summary>
   
   ## Solution
-**Live **
+  
+**Live Output**
 
 London
   
@@ -307,7 +311,7 @@ We'd recommend doing it like this:
   
   ## Solution
   
-  **Live output**
+  **Live Output**
   
 MAN: Manchester Piccadilly
   
