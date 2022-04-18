@@ -210,7 +210,37 @@ for (let city of cities) {
 }
 
 ```
-SHOW SOLUTION
+
+
+<details>
+  <summary>Click to Show Solution!</summary>
+  
+  ## Solution
+**Live **
+London
+Manchester
+Birmingham
+Liverpool
+  
+  ```
+  list = document.querySelector('.output ul');
+list.innerHTML = '';
+const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+for (let city of cities) {
+  // write your code just below here
+  const lower = city.toLowerCase();
+  const firstLetter = lower.slice(0,1);
+  const capitalized = lower.replace(firstLetter,firstLetter.toUpperCase());
+  const result = capitalized;
+  const listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+}
+  ```
+  
+</details>
+
 
 ## Making new strings from old parts
 
