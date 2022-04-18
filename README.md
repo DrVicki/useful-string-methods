@@ -132,11 +132,109 @@ quote = quote.replaceAll('be','code');
 console.log(quote);  // "To code or not to code"
 ```
 
-Active learning examples
-In this section we'll get you to try your hand at writing some string manipulation code. In each exercise below, we have an array of strings, and a loop that processes each value in the array and displays it in a bulleted list. You don't need to understand arrays or loops right now — these will be explained in future articles. All you need to do in each case is write the code that will output the strings in the format that we want them in.
+##Active learning examples
 
-Each example comes with a "Reset" button, which you can use to reset the code if you make a mistake and can't get it working again, and a "Show solution" button you can press to see a potential answer if you get really stuck.
+Now try your hand at writing some string manipulation code. 
+
+  - In each exercise below, we have an array of strings, and a loop which processes each value in the array and displays it in a bulleted list. 
+  - You don't need to understand arrays or loops right now; these will be explained in future articles. 
+  - All you need to do in each case is write the code which will output the strings in the format we want them in.
+
+Each example comes with a "**Show solution**" button you can press to see a potential answer if you get really stuck.
 
 
+##Filtering greeting messages
+
+In the first exercise we'll start you off simple; we have an array of greeting card messages, but we want to sort them to list just the Christmas messages. We want you to fill in a conditional test inside the ```if( ... ```) structure, to test each string and only print it in the list if it is a Christmas message.
+
+Think about how you could test whether the message in each case is a Christmas message. 
+  - What string is present in all of those messages, and what method could you use to test whether it is present?
+
+**Live output**
+Happy Birthday!
+Merry Christmas my love
+A happy Christmas to all the family
+You're all I want for Christmas
+Get well soon
+
+```
+const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const greetings = ['Happy Birthday!',
+                 'Merry Christmas my love',
+                 'A happy Christmas to all the family',
+                 'You\'re all I want for Christmas',
+                 'Get well soon'];
+
+for (let greeting of greetings) {
+  // Your conditional test needs to go inside the parentheses
+  // in the line below, replacing what's currently there
+  if (greeting) {
+    const listItem = document.createElement('li');
+    listItem.textContent = greeting;
+    list.appendChild(listItem);
+  }
+}
+```
+SHOW SOLUTION
 
 
+##Fixing capitalization
+
+In this exercise we have the names of cities in the United Kingdom, but the capitalization is messed up. We want you to change them so they are all lower case, except for a capital first letter. A good way to do this is to:
+
+  - Convert the whole of the string contained in the city variable to lower case and store it in a new variable.
+  - Grab the first letter of the string in this new variable and store it in another variable.
+  - Using this latest variable as a substring, replace the first letter of the lowercase string with the first letter of the lowercase string changed to upper case. 
+  - Store the result of this replace procedure in another new variable.
+  - Change the value of the result variable to equal to the final result, not the city.
+
+**Live output**
+lonDon
+ManCHESTer
+BiRmiNGHAM
+liVERpoOL
+
+```
+const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+for (let city of cities) {
+  // write your code just below here
+
+  const result = city;
+  const listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+}
+
+```
+SHOW SOLUTION
+
+##Making new strings from old parts
+
+In this last exercise, the array contains a bunch of strings containing information about train stations in the North of England. The strings are data items which contain the three-letter station code, followed by some machine-readable data, followed by a semicolon, followed by the human-readable station name. For example:
+
+```
+MAN675847583748sjt567654;Manchester Piccadilly
+```
+
+We want to extract the station code and name, and put them together in a string with the following structure:
+
+```
+MAN: Manchester Piccadilly
+```
+
+We'd recommend doing it like this:
+
+  1. Extract the three-letter station code and store it in a new variable.
+  2. Find the character index number of the semicolon.
+  3. Extract the human-readable station name using the semicolon character index number as a reference point, and store it in a new variable.
+  4. Concatenate the two new variables and a string literal to make the final string.
+  5. Change the value of the result variable to equal to the final string, not the station.
+
+SHOW SOLUTION
+
+Thanks! You are awesome!!
+Dr. Vicki
