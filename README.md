@@ -85,7 +85,7 @@ if (browserType.endsWith('zilla')) {
 }
 ```
 
-**Changing case**
+** Changing case**
 
 The string methods ```toLowerCase()``` and ```toUpperCase()``` take a string and convert all the characters to lower or uppercase, respectively. This can be useful for example if you want to normalize all user-entered data before storing it in a database.
 
@@ -97,7 +97,7 @@ console.log(radData.toLowerCase());
 console.log(radData.toUpperCase());
 ```
 
-**Updating parts of a string**
+** Updating parts of a string**
 
 You can replace one substring inside a string with another substring using the ```replace()``` method.
 
@@ -132,7 +132,7 @@ quote = quote.replaceAll('be','code');
 console.log(quote);  // "To code or not to code"
 ```
 
-##Active learning examples
+## Active learning examples
 
 Now try your hand at writing some string manipulation code. 
 
@@ -143,14 +143,14 @@ Now try your hand at writing some string manipulation code.
 Each example comes with a "**Show solution**" button you can press to see a potential answer if you get really stuck.
 
 
-##Filtering greeting messages
+## Filtering greeting messages
 
 In the first exercise we'll start you off simple; we have an array of greeting card messages, but we want to sort them to list just the Christmas messages. We want you to fill in a conditional test inside the ```if( ... ```) structure, to test each string and only print it in the list if it is a Christmas message.
 
 Think about how you could test whether the message in each case is a Christmas message. 
   - What string is present in all of those messages, and what method could you use to test whether it is present?
 
-**Live output**
+** Live output**
 Happy Birthday!
 Merry Christmas my love
 A happy Christmas to all the family
@@ -179,7 +179,7 @@ for (let greeting of greetings) {
 SHOW SOLUTION
 
 
-##Fixing capitalization
+## Fixing capitalization
 
 In this exercise we have the names of cities in the United Kingdom, but the capitalization is messed up. We want you to change them so they are all lower case, except for a capital first letter. A good way to do this is to:
 
@@ -212,7 +212,7 @@ for (let city of cities) {
 ```
 SHOW SOLUTION
 
-##Making new strings from old parts
+## Making new strings from old parts
 
 In this last exercise, the array contains a bunch of strings containing information about train stations in the North of England. The strings are data items which contain the three-letter station code, followed by some machine-readable data, followed by a semicolon, followed by the human-readable station name. For example:
 
