@@ -234,7 +234,16 @@ We'd recommend doing it like this:
   4. Concatenate the two new variables and a string literal to make the final string.
   5. Change the value of the result variable to equal to the final string, not the station.
 
-SHOW SOLUTION
+
+<details>
+  <summary>Click to Show Solution!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
 
 Thanks! You are awesome!!
 Dr. Vicki
